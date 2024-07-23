@@ -598,27 +598,27 @@ label {
 }
 
 .jImg1 {
-  background-image: url("/JS/Calc/Img.png");
+  background-image: url("JS/Calc/Img.png");
 }
 
 .jImg2 {
-  background-image: url("/JS/Page/Img.png");
+  background-image: url("JS/Page/Img.png");
 }
 
 .jImg3 {
-  background-image: url("/JS/Countries/Img.png");
+  background-image: url("JS/Countries/Img.png");
 }
 
 .jImg4 {
-  background-image: url("/JS/Clock/Img.png");
+  background-image: url("JS/Clock/Img.png");
 }
 
 .jImg5 {
-  background-image: url("/JS/CRUD/Img.png");
+  background-image: url("JS/CRUD/Img.png");
 }
 
 .jImg6 {
-  background-image: url("/JS/Poke/Img.png");
+  background-image: url("JS/Poke/Img.png");
 }
 
 .js-card {
