@@ -349,27 +349,27 @@ main {
 }
 
 .cImg1 {
-  background-image: url("../LPs/CoffeTime/DisplayIMG.png");
+  background-image: url("/LPs/CoffeTime/DisplayIMG.png");
 }
 
 .cImg2 {
-  background-image: url("../LPs/Free Consultation/DisplayIMG.png");
+  background-image: url("/LPs/Free Consultation/DisplayIMG.png");
 }
 
 .cImg3 {
-  background-image: url("../LPs/Here N Out/DisplayIMG.png");
+  background-image: url("/LPs/Here N Out/DisplayIMG.png");
 }
 
 .cImg4 {
-  background-image: url("../LPs/Let Us Lead you/DisplayIMG.png");
+  background-image: url("/LPs/Let Us Lead you/DisplayIMG.png");
 }
 
 .cImg5 {
-  background-image: url("../LPs/Out Of Box/DisplayIMG.png");
+  background-image: url("/LPs/Out Of Box/DisplayIMG.png");
 }
 
 .cImg6 {
-  background-image: url("../LPs/Push you Forward/DisplayIMG.png");
+  background-image: url("/LPs/Push you Forward/DisplayIMG.png");
 }
 
 .card {
@@ -598,27 +598,27 @@ label {
 }
 
 .jImg1 {
-  background-image: url("../JS/Calc/Img.png");
+  background-image: url("/JS/Calc/Img.png");
 }
 
 .jImg2 {
-  background-image: url("../JS/Page/Img.png");
+  background-image: url("/JS/Page/Img.png");
 }
 
 .jImg3 {
-  background-image: url("../JS/Countries/Img.png");
+  background-image: url("/JS/Countries/Img.png");
 }
 
 .jImg4 {
-  background-image: url("../JS/Clock/Img.png");
+  background-image: url("/JS/Clock/Img.png");
 }
 
 .jImg5 {
-  background-image: url("../JS/CRUD/Img.png");
+  background-image: url("/JS/CRUD/Img.png");
 }
 
 .jImg6 {
-  background-image: url("../JS/Poke/Img.png");
+  background-image: url("/JS/Poke/Img.png");
 }
 
 .js-card {
