@@ -38,7 +38,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/eden-lesnik/SpaceWeb.git
+git clone https://github.com/edenlesnik/finaljs
 Navigate to the project directory:
 
 bash
