@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="register-container">
+        <h1>CRUD Operations</h1>
+        <h2>ניהול משתמשים</h2>
+        <h3>:אנה מלא את הפרטים למטה</h3>
+        <form class = "register-form">
+            <label for = "fname">שם פרטי:</label>
+            <input type = "text" class = "fname">
+     
+            <label for = "lname">שם משפחה:</label>
+            <input type = "text" class = "lname">
+
+            <label for = "email">מייל:</label>
+            <input type = "text" class = "email">
+
+            <label for = "password">סיסמה:</label>
+            <input type = "password" class = "password"></br>
+            <button class = "submit">הירשם</button>
+        </form>
+        <form class = "login-form">
+            <label for = "email">מייל:</label>
+            <input type = "text" class = "login-email">
+    
+            <label for = "password">סיסמה:</label>
+            <input type = "password" class = "login-password"></br>
+            <button class = "login-button">היכנס</button>
+
+        </form>
+        <button class ="login-switch">התחברות</p>
+    </div>
+    <div class = "ulist-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>שם פרטי</th>  
+                    <th>שם משפחה</th>  
+                    <th>אימייל</th>  
+                    <th>סיסמא</th> 
+                    <th>אפשרויות</th>   
+                </tr>
+            </thead>
+            <tbody class = "userTableBody">
+            </tbody>
+        </table>
+    </div>   
+
+    <script src="script.js" type = "module" async defer></script>
+
+</body>
+</html>

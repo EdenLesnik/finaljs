@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Builer tool style</title>
+    <link rel="stylesheet" href="toolstyle.css">
+</head>
+
+<body>
+    <div id="toolbar-main">
+        <h1>בונה מסך</h1>
+        <p>במיצג זו תוכלו לבצע מניפולציות על דיוים אשר תיצרו</p>
+      
+        <div class="tools">
+
+            <label>סוג אלמנט</label>
+            <select name="element" id="utype">
+                <option value="div">Div</option>
+                <option value="container">Container</option>
+
+              </select>
+
+            <label>צבע</label>
+            <input type="color" id="ucolor">
+
+            <label>רוחב</label>
+            <input type="number" id="uwidth" min="100" max="600" onKeyDown="return false" >
+ 
+            <label>גובה</label>
+            <input type="number" id="uheight" min="100" max="600" onKeyDown="return false">
+
+            <label>תוכן</label>
+            <input type="text" id="ucontent">
+
+            <label>צבע גופן</label>
+            <input type="color" id="ufontcolor">
+
+            <label>גודל גופן</label> 
+            <input type="number" id="ufontsize">
+
+            <label>סוג גופן</label>
+            <input type="text" id="ufonttype">
+
+
+            <button id="btn">הוסף</button>
+        </div>
+
+
+    </div>
+
+    <div class="container"></div>
+
+
+
+<script>
+        document.querySelector('#btn').addEventListener('click', () => {
+            const box = document.createElement(document.querySelector('#utype').value);
+            let ucolor = document.querySelector('#ucolor').value;
+            let uheight = document.querySelector('#uheight').value;
+            let uwidth = document.querySelector('#uwidth').value;
+            let ucontent = document.querySelector('#ucontent').value;
+            let ufontcolor = document.querySelector('#ufontcolor').value;
+            let ufontsize = document.querySelector('#ufontsize').value;
+            let ufonttype = document.querySelector('#ufonttype').value;
+
+            /*
+            //לא עובד
+            if(!uwidth || !height){
+                alert('אנה בחר גובה ורוחב!');
+                
+            }
+            */
+     
+            box.style.width = uwidth + 'px';
+            box.style.height = uheight +'px';
+            box.style.backgroundColor = ucolor;
+            box.style.font
+            box.innerText = ucontent;
+            box.style.fontSize = ufontsize;
+            box.style.fontFamily = ufonttype;
+            box.style.color = ufontcolor;
+
+            box.style.border = '1px solid black';
+
+            document.querySelector('.container').appendChild(box);
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pokemon-container">
+        <h1>Pokémon Info</h1>
+        <form id="pokemon-form">
+            <label for="pokemon">Enter Pokémon Name or ID:</label>
+            <input type="text" id="pokemon" name="pokemon">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="pokemon-result"></div>
+    <script>
+        document.getElementById('pokemon-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const pokemon = document.getElementById('pokemon').value.trim().toLowerCase();
+            const resultDiv = document.querySelector('.pokemon-result');
+            resultDiv.innerHTML = ''; // Clear previous results
+            
+            if (!pokemon) {
+                resultDiv.innerHTML = '<p>Please enter a Pokémon name or ID.</p>';
+                return;
+            }
+
+            fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    displayPokemonData(data);
+                })
+                .catch(() => {
+                    searchPokemonByName(pokemon, resultDiv);
+                });
+        });
+
+        function displayPokemonData(data) {
+            const resultDiv = document.querySelector('.pokemon-result');
+            resultDiv.style.display = 'flex';
+            let html = `
+                <img src="${data.sprites.front_default}" alt="${data.name}">
+                <div class="pokemon-details">
+                    <h2><span>${capitalizeFirstLetter(data.name)}</span></h2>
+                    <p>ID: <span>${data.id}</span></p>
+                    <p>Base Experience: <span>${data.base_experience}</span></p>
+                    <p>Height: <span>${data.height}</span></p>
+                    <p>Weight: <span>${data.weight}</span></p>
+                    <p>Abilities: <span><br>${data.abilities.map(ability => ability.ability.name).join('<br>')}</span></p>
+                    <p>Types: <span><br>${data.types.map(type => type.type.name).join('<br>')}</span></p>
+                </div>`;
+            resultDiv.innerHTML = html;
+        }
+
+        function searchPokemonByName(name, resultDiv) {
+            fetch(`https://pokeapi.co/api/v2/pokemon?limit=1000`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const pokemon = data.results.find(pokemon => pokemon.name.includes(name));
+                    if (pokemon) {
+                        return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
+                            .then(response => response.json())
+                            .then(data => displayPokemonData(data));
+                    } else {
+                        resultDiv.innerHTML = '<p>Pokémon not found. Please check the name or ID and try again.</p>';
+                    }
+                })
+                .catch(error => {
+                    resultDiv.innerHTML = '<p>Error fetching data. Please try again later.</p>';
+                });
+        }
+
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+    </script>
+</body>
+</html>

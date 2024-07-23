@@ -1,0 +1,49 @@
+nav {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 37px 20px;
+    font-family: 'Heebo', sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    color: tomato;
+    font-size: 35px;
+    letter-spacing: 2px;
+    display: flex;
+    width: 14VW;
+    height: 5vw;
+    margin: 3px;
+}
+
+nav ul li {
+
+    text-shadow: 5px;
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-left: 50px;
+}
+
+nav ul li:hover {
+    color: tomato;
+    cursor: pointer;
+    text-shadow: 10px;
+    transition: 1s;
+}
+
+#hamburger {
+    color: azure;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}

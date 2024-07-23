@@ -1,0 +1,149 @@
+.js {
+    color: black;
+    height: 160vh;
+    margin-top: -130px;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    /*
+    background-image: url(Images/BGMain.jpg);
+    background-position: center;
+  */
+    font-family: 'Heebo', sans-serif;
+}
+
+.js-text {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.js-text h1 {
+    color: tomato;
+    margin: 30px;
+    font-size: 50px;
+}
+
+
+
+.jsImg {
+    width: 100%;
+    height: 300px;
+    background-image: url('./Projectimage1.png');
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+}
+.jImg1{
+    background-image: url('../JS/Calc/Img.png');
+
+}
+.jImg2{
+    background-image: url('../JS/Page/Img.png');
+
+}
+.jImg3{
+    background-image: url('../JS/Countries/Img.png');
+
+}
+.jImg4{
+    background-image: url('../JS/Clock/Img.png');
+
+}
+.jImg5{
+    background-image: url('../JS/CRUD/Img.png');
+
+}
+.jImg6{
+    background-image: url('../JS/Poke/Img.png');
+
+}
+
+.js-card {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    height: fit-content;
+    box-shadow: 3px 3px 12px tomato;
+    box-shadow: 0.1px 11px 16px tomato;
+    margin: 2%;
+    transition: all 250ms;
+    text-align: center;
+}
+
+.js-card:hover {
+    transform: translateY(-3px);
+}
+.js-card-button {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: tomato;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    min-height: 3rem;
+    padding: 0.2rem calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    
+}
+
+
+.js-card-button:hover,
+.js-card-button:focus {
+    background-color: tomato;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.card-button:hover {
+    transform: translateY(-1px);
+}
+
+.js-card-button:active {
+    background-color: tomato;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+.js-card h3 {
+    color: white;
+}
+.js-card iconer {
+    display: flex;
+    gap: 10px;
+}
+.js-card i {
+    margin: 3px;
+    font-size: 2rem;
+    color: tomato;
+}
+#js-gallery {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    //width: 1130px;
+    //max-width: 95%;
+    flex-basis: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,87 @@
+body{
+    background-image: url('./imgs/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "ABeeZee", sans-serif;
+}
+.pokemon-container{
+    background-color: rgba(255, 247, 172, 0.644);
+    text-shadow: 1px 1px 2px rgb(164, 200, 241);
+    width: 24%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0px 30px 30px 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);
+    border: 2px solid rgb(134, 126, 2);
+}
+span {
+    color: rgb(90, 154, 236);
+    font-weight: bold;
+}
+.pokemon-container > h1 {
+    text-shadow: 1px 6px 2px rgb(164, 200, 241);
+}
+.pokemon-container > form > label{
+    color: rgba(88, 88, 88, 0.678);
+}
+.pokemon-container > form > button {
+    margin-top: 0px;
+}
+
+.pokemon-result{
+    width: 24%;
+    margin: 20px auto;
+    background-color: rgba(255, 247, 172, 0.644);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);
+    width: 39%;
+    border: 2px solid rgb(134, 126, 2);
+    display: none;
+}
+.pokemon-details{
+    text-align: center;
+    
+}
+.pokemon-result > img{
+    width:50%;
+
+}
+.pokemon-details > h2 {
+    text-shadow: 1px 1px 2px rgb(164, 200, 241);
+}
+.pokemon-container > form > input {
+    width: 60%;
+    background-color: aliceblue;
+    border: none;
+    height: 34px;
+    line-height: 1.15;
+    margin: 10px;
+}
+/* Button design */
+.pokemon-container > form > button {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color:  rgb(90, 154, 236);
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 10px;
+    overflow: hidden;
+    padding: 0 25px;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    border-radius: 0;
+    width: 60%;
+}
+.pokemon-container > form > button:hover {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}

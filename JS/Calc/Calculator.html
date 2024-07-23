@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+    <div class="title">
+        <h1>משחק ללימוד חשבון</h1>
+    </div>
+    <div id="main-container">
+ 
+
+        <button id="btnSend">שלח</button>
+        <input type="text" class="exam-input">
+        <div id="exam"></div>
+        
+    </div>
+
+    <div id = "status">
+        !התחל לשחק
+    </div>
+
+      <div id="winstatus">
+        <div class="wins">
+            <h1>ניצחונות</h1>
+            <div id="winsamount">0</div>
+        </div>
+        <div class= "table-status">
+          <table>
+          <thead>
+              <tr>
+                <th>תרגיל</th>
+                <th>תשובה נכונה</th>
+                <th>תשובה שענית</th>
+              </tr>
+          </thead>
+          <tbody class="tData">
+              <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+              </tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="loses">
+            <h1>הפסדים</h1>
+            <div id="losesamount">0</div>
+        </div>
+      </div>
+
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+      
+      <div id="edit">
+        <div class="ope">
+            <label>פעולת מתמטיקה</label>
+            <select name="element" id="operator">
+                <option value=0>+</option>
+                <option value=1>-</option>
+                <option value=2>*</option>
+                <option value=3>/</option>
+              </select>
+        </div>
+        <div class="ope">
+            <label>טווח מספרים</label>
+            <select name="ranges" id="range">
+                <option value=0>1-100</option>
+                <option value=1>1-1000</option>
+                <option value=2>1-10</option>
+              </select>
+        </div>
+        <button onclick='NewExam()'id = 'resetBtn'>עדכן</button>
+      </div>
+    <script src="calc.js"></script>
+</body>
+</html>

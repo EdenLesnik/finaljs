@@ -1,0 +1,77 @@
+#contact {
+    /*  margin: -160px;*/
+    margin-top: -10px;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(black, tomato);
+    font-family: 'Heebo', sans-serif;
+	border-bottom: 3px solid tomato;
+	box-shadow: 1px 3px 26px tomato;
+}
+
+
+#container-form {
+    width: 70vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#form-title>h1 {
+    color: tomato;
+    font-size: 3rem;
+}
+
+#form-title>p {
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin: 0 auto;
+}
+
+#container-form {
+    direction: rtl;
+}
+
+#form-title {
+    width: 60%;
+    margin: auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-control>input {
+    height: 50px;
+    background: #E5EEFF;
+    border: 0;
+    border-bottom: 5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    width: 100%;
+    margin: 0 auto;
+ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ opacity: 1;
+}
+
+label {
+    color: black;
+    text-align: right;
+}
+

@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(to bottom, #00aefe, #f7bd4194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Ariel", sans-serif;
+}
+
+.container {
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.clock-table {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.clock-table h2 {
+    margin-bottom: 10px;
+}
+
+.clock-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.clock-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.clock-table img {
+    width: 32px;
+    height: 32px;
+}
+
+.exercises {
+    margin-top: 60px;
+    text-align: right;
+}
+
+.exercise {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}

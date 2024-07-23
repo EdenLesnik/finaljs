@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>אפליקציית שעון</h1>
+            <p>שעון עולמי - שעון לפי מדינות</p>
+        </header>
+        <div class="clock-table">
+            <h2>שעון עולמי</h2>
+            <table>
+                <tr>
+                    <td>ישראל</td>
+                    <td id="israel-time">00:00</td>
+                    <td id="israel-greeting">בוקר טוב</td>
+                    <td><img src="images/israel.png" alt="Israel Flag"></td>
+                </tr>
+                <tr>
+                    <td>ארצות הברית</td>
+                    <td id="usa-time">00:00</td>
+                    <td id="usa-greeting">Good Morning</td>
+                    <td><img src="images/usa.png" alt="USA Flag"></td>
+                </tr>
+                <tr>
+                    <td>סין</td>
+                    <td id="china-time">00:00</td>
+                    <td id="china-greeting">早上好</td>
+                    <td><img src="images/china.png" alt="China Flag"></td>
+                </tr>
+                <tr>
+                    <td>צרפת</td>
+                    <td id="france-time">00:00</td>
+                    <td id="france-greeting">Bonjour</td>
+                    <td><img src="images/france.png" alt="France Flag"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="exercises">
+            <h2>תרגול עבודה עם זמנים</h2>
+            <div id="ex1" class="exercise">
+                <h3>תרגיל 1</h3>
+                <p id="ex1-result"></p>
+            </div>
+            <div id="ex2" class="exercise">
+                <h3>תרגיל 2</h3>
+                <p id="ex2-result"></p>
+            </div>
+            <div id="ex3" class="exercise">
+                <h3>תרגיל 3</h3>
+                <p id="ex3-result"></p>
+            </div>
+            <div id="ex4" class="exercise">
+                <h3>תרגיל 4</h3>
+                <p id="ex4-result"></p>
+            </div>
+            <div id="ex5" class="exercise">
+                <h3>תרגיל 5</h3>
+                <p id="ex5-result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
