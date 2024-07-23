@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Assistant", sans-serif;
+}
+
+/*
+.background-image{
+    padding-top: -10px;
+    background-image: url('Image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: "Assistant", sans-serif;
+}
+*/
+.container-header{
+  position: relative;
+  text-align: center;
+}
+img{
+    margin-top: -74px;
+
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container-text{
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+h1{
+    color:#D3E10E;
+    font-size: 3.5em;
+    letter-spacing: 4px;
+    margin: 10px;
+}
+p{
+    color: white;
+}
+
+.container-form{
+
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    margin-top: 40px;
+
+}
+.container-form-fill{
+    display: flex;
+    text-align: right;
+    flex-direction:column;
+    width:300px;
+    margin: 13px;
+}
+input{
+    background: white;
+    border: 0;
+    border-bottom: 4px solid #D3E10E;
+}
+input[type*="submit"]{
+
+    font-weight: 400;
+    font-style: normal;
+    background-color:#D3E10E;
+    color: #011560;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+input{
+    height: 5vh;
+}
+input, label {
+    
+    width:100%;
+    color: #011560;
+    font-weight: bold;
+}
+label[for*="button"]
+{
+    color:white;
+}
+.container-form-send{
+    flex-direction:row;
+}
+
+
+@media (max-width: 800px) {
+    .container-header{
+        margin-top: 70px;
+    }
+    img{
+        height: 300px;
+    }
+    .container-text{
+        top: 34%;
+    }
+    .container-text>h1{
+        font-size: 1.8rem;
+    }
+    .container-form {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+
+    .container-form-fill{
+        top: 50%;
+        left: 50%;
+        width:435px;
+    }
+    h1{
+        font-size: 100px;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 1vh;
+    }
+}
